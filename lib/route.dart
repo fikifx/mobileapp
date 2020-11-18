@@ -10,4 +10,13 @@ class Routing{
         )
     );
   }
+  static changePagesFul(BuildContext context, StatefulWidget pages) {
+    Navigator.push(context,
+        MaterialPageRoute(
+            builder: (_) {
+              return pages;
+            }
+        )
+    );
+  }
 }

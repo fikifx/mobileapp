@@ -9,13 +9,12 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp( //sebuah parent yang akan menerapkan style Material Design
-      title: 'HOMECRAFT',
-      debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          primarySwatch: Colors.green,
-        ),
-        home : HomePage()
-    );
+    return MaterialApp(
+        //sebuah parent yang akan menerapkan style Material Design
+        title: 'HOMECRAFT',
+        debugShowCheckedModeBanner: false,
+        theme:
+            ThemeData(primarySwatch: Colors.green, fontFamily: 'JosefinSans'),
+        home: HomePage());
   }
 }
