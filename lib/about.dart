@@ -10,7 +10,7 @@ class TentangAplikasi extends StatelessWidget {
       body: Container(
         padding: EdgeInsets.all(25),
         child: Text(
-          "Homecraft adalah aplikasi jual beli perumahan terpercaya yang menjual rumah aman, nyaman, dan murah.",
+          "Homecraft adalah aplikasi jual beli perumahan bersubsidi yang terpercaya  aman, nyaman, dan murah.",
           style: TextStyle(fontFamily: 'JosefinSans'),
         ),
       ),
