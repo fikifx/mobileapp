@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
     Widget titleSection = Container(
         padding: const EdgeInsets.all(30),
         child: Text(
-          'Situs Jual Beli Perumahan Terpercaya Hanya di Homecraft',
+          'Situs Jual Beli Perumahan Terpercaya Hanya di HomeCraft',
           softWrap: true,
         ));
     return Scaffold(
