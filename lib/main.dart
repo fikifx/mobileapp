@@ -13,8 +13,7 @@ class MyApp extends StatelessWidget {
         //sebuah parent yang akan menerapkan style Material Design
         title: 'HOMECRAFT',
         debugShowCheckedModeBanner: false,
-        theme:
-            ThemeData(primarySwatch: Colors.green, fontFamily: 'JosefinSans'),
+        theme: ThemeData(primarySwatch: Colors.green, fontFamily: 'OpenSans'),
         home: HomePage());
   }
 }
