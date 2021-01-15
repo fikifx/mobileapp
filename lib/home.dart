@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/about.dart';
 import 'package:flutter_app/detailrumah.dart';
+import 'package:flutter_app/login.dart';
 import 'route.dart';
 
 class HomePage extends StatefulWidget {
@@ -30,7 +31,8 @@ class _HomePageState extends State<HomePage> {
               decoration: BoxDecoration(
                 color: Colors.green,
                 image: const DecorationImage(
-                  image: AssetImage('assets/GI1.jpg'),
+                  image: NetworkImage(
+                      'https://i.ibb.co/3vMfNnK/Whats-App-Image-2021-01-13-at-12-35-52.jpg'),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -42,17 +44,17 @@ class _HomePageState extends State<HomePage> {
               },
             ),
             ListTile(
-              title: Text('Detail Perumahan'),
-              onTap: () {
-                Routing.changePagesFul(context, DetailPerumahan());
-              },
-            ),
-            ListTile(
               title: Text('Tentang Aplikasi'),
               onTap: () {
                 Routing.changePages(context, TentangAplikasi());
               },
             ),
+            ListTile(
+              title: Text('Login/Register'),
+              onTap: () {
+                Routing.changePagesFul(context, LoginPage());
+              },
+            )
           ],
         ),
       ),
@@ -71,7 +73,7 @@ class _HomePageState extends State<HomePage> {
 }
 
 class RumahPertama extends StatelessWidget {
-  RumahPertama({Key key}) : super(key: key);
+  RumahPertama();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
